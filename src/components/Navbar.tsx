@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/paschiago-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +22,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="font-serif text-2xl sm:text-3xl font-bold tracking-tight transition-luxury hover:text-luxury-gold">
-            PASCHIAGO
+          <Link to="/" className="transition-luxury hover:opacity-80">
+            <img src={logo} alt="Paschiago - Luxury Clothing Brand" className="h-12 sm:h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
