@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['Playfair Display', 'serif'],
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +60,12 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        luxury: {
+          gold: "hsl(var(--luxury-gold))",
+          beige: "hsl(var(--luxury-beige))",
+          cream: "hsl(var(--luxury-cream))",
+          black: "hsl(var(--luxury-black))",
         },
       },
       borderRadius: {
